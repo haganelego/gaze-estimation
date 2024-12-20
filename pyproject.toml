@@ -1,18 +1,18 @@
 [project]
-name = "gaze-estimation"
+name = "mobilegaze"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
     { name = "haganelego", email = "hagane01061998@icloud.com" }
 ]
 dependencies = [
-    "numpy==2.0.1",
+    "numpy>=2.0.1",
     "onnxruntime==1.19.0",
-    "opencv-python==4.10.0.84",
-    "pillow==10.2.0",
-    "torch==2.4.0",
-    "torchvision==0.19.0",
-    "tqdm==4.66.5",
+    "opencv-python>=4.10.0.84",
+    "pillow>=10.2.0",
+    "torch>=2.4.0",
+    "torchvision>=0.19.0",
+    "tqdm>=4.66.5",
     "setuptools>=75.6.0",
     "scikit-learn>=1.6.0",
 ]
@@ -31,4 +31,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/gaze_estimation"]
+packages = ["src/mobilegaze"]
